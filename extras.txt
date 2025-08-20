@@ -72,3 +72,10 @@
     updateUI();
   });
 </script>
+
+
+### Add to HTML
+
+
+  <!-- Debug Mode -->
+  <section class="btns-container" id="debugBtn"><button class="debug-btn"></button></section>
