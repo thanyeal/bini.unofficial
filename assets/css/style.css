@@ -1163,7 +1163,7 @@ justify-content: end;
 }
 
 .yt-button a {
-  border-radius: var(--fs-07);
+  border-radius: var(--fs-04);
   justify-self: center;
   display: flex;
   align-items: center;
@@ -1616,7 +1616,7 @@ hr {
 
 
   /** 
-    * NAV SECTIONS
+    *   NAV SECTIONS
     */
 
 
@@ -1626,7 +1626,7 @@ hr {
 
 
   /** 
-    * ABOUT SECTIONS
+    *   ABOUT SECTIONS
     */
 
 
@@ -1661,7 +1661,7 @@ hr {
 
 
   /** 
-    * BIAS SECTION
+    *   BIAS SECTIONS
     */
 
 
@@ -1708,7 +1708,7 @@ hr {
 
 
   /** 
-    * MUSIC SECTIONS
+    *   MUSIC SECTIONS
     */
 
 
@@ -1722,6 +1722,82 @@ hr {
   .music-footer {
     display: none;
   }
+
+
+
+  /**
+    *     YOUTUBE SECTION
+    */
+
+
+  #videos section {
+    margin: 30px 0;
+    height: 200px;
+    scale: 1.4;
+  }
+
+  #videos section img {
+    display: none;
+  }
+
+  .yt-text-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .yt-text-container h4 {
+    font-size: var(--fs-12);
+    align-items: end;
+    justify-content: center;
+  }
+
+  .yt-text-container h4 span {
+    position: relative;
+    font-size: var(--fs-13);
+    top: 5px;
+    padding: 0px;
+  }
+
+  .yt-text-container h5 {
+    font-size: var(--fs-04);
+    text-wrap: auto;
+    text-align: center !important;
+    margin-top: 10px;
+  }
+
+  .yt-button {
+    justify-content: center;
+  }
+
+
+  /** 
+    *   GALLERY SECTIONS
+    */
+
+
+  .gallery-card {
+    width: 200px;
+    height: auto;
+  }
+
+
+/** 
+  *   EVENTS SECTIONS
+  */
+
+
+  #events section h1 {
+    font-size: var(--fs-12);
+  }
+
+  .events-container {
+    flex-wrap: wrap;
+    scale: 0.8;
+    margin-top: -1%;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1731,7 +1807,7 @@ hr {
 
 
   /** 
-    * NAVBAR SECTIONS
+    *   NAVBAR SECTIONS
     */
 
 
@@ -1745,7 +1821,7 @@ hr {
 
 
   /** 
-    * ABOUT SECTIONS
+    *   ABOUT SECTIONS
     */
 
 
@@ -1780,7 +1856,7 @@ hr {
 
 
   /** 
-    * BIAS SECTION
+    *   BIAS SECTIONS
     */
 
 
@@ -1829,7 +1905,7 @@ hr {
 
 
   /** 
-    * MUSIC SECTIONS
+    *   MUSIC SECTIONS
     */
 
 
@@ -1844,6 +1920,125 @@ hr {
     display: none;
   }
 
+
+  /**
+    *     YOUTUBE SECTION
+    */
+
+
+  #videos section {
+    height: 200px;
+  }
+
+  #videos section img {
+    display: none;
+  }
+
+  .yt-text-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .yt-text-container h4 {
+    font-size: var(--fs-12);
+    align-items: end;
+    justify-content: center;
+  }
+
+  .yt-text-container h4 span {
+    position: relative;
+    font-size: var(--fs-13);
+    top: 5px;
+    padding: 0px;
+  }
+
+  .yt-text-container h5 {
+    font-size: var(--fs-04);
+    text-wrap: auto;
+    text-align: center !important;
+    margin-top: 10px;
+  }
+
+  .yt-button {
+    justify-content: center;
+  }
+
+
+  /** 
+    *   GALLERY SECTIONS
+    */
+
+
+  .gallery-header h1 {
+    font-size: var(--fs-12);
+  }
+
+  .gallery-header img {
+    display: none;
+  }
+
+  .gallery-card {
+    width: 150px;
+    height: auto;
+  }
+
+
+/** 
+  *   EVENTS SECTIONS
+  */
+
+
+  #events section h1 {
+    font-size: var(--fs-12);
+  }
+
+  .events-container {
+    flex-wrap: wrap;
+    scale: 0.8;
+    margin-top: -5%;
+  }
+
+
+/** 
+  *   LETTER SECTIONS
+  */
+
+
+  #letter section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newsletter-container-2 {
+    margin: 0 70px;
+  }
+
+  .newsletter-container-2 div:nth-child(1) {
+    flex-wrap: wrap;
+  }
+
+  .newsletter-container-2 div:nth-child(1) input{
+    margin-bottom: 20px;
+  }
+
+  .newsletter-container-2 div:nth-child(1) button{
+    height: 40px;
+    width: 100%;
+    margin: 0;
+  }
+
+
+/** 
+  *   FOOTER SECTIONS
+  */
+
+
+  .footer-header div:nth-child(2) {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1853,7 +2048,7 @@ hr {
 
 
   /** 
-    * NAVBAR SECTIONS
+    *   NAVBAR SECTIONS
     */
 
 
@@ -1920,7 +2115,7 @@ hr {
 
 
   /** 
-    * ABOUT SECTION
+    *   ABOUT SECTIONS
     */
 
 
@@ -1956,7 +2151,7 @@ hr {
 
 
   /** 
-    * BIAS SECTION
+    *   BIAS SECTION
     */
 
 
@@ -2009,8 +2204,9 @@ hr {
     padding: 0 10%;
   }
 
+
   /** 
-    * MUSIC SECTIONS
+    *   MUSIC SECTIONS
     */
 
 
@@ -2031,11 +2227,178 @@ hr {
   .music-footer {
     display: none;
   }
+
+
+  /**
+    *     YOUTUBE SECTION
+    */
+
+
+  #videos section {
+    height: 200px;
+  }
+
+  #videos section img {
+    display: none;
+  }
+
+  .yt-text-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .yt-text-container h4 {
+    font-size: var(--fs-12);
+    align-items: end;
+    justify-content: center;
+  }
+
+  .yt-text-container h4 span {
+    position: relative;
+    font-size: var(--fs-13);
+    top: 5px;
+    padding: 0px;
+  }
+
+  .yt-text-container h5 {
+    font-size: var(--fs-04);
+    text-wrap: auto;
+    text-align: center !important;
+    margin-top: 10px;
+  }
+
+  .yt-button {
+    justify-content: center;
+  }
+
+
+  /** 
+    *   GALLERY SECTIONS
+    */
+
+
+  .gallery-body {
+    grid-template-columns: auto auto auto;
+  }
+
+  .gallery-header h1 {
+    font-size: var(--fs-12);
+  }
+
+  .gallery-header img {
+    display: none;
+  }
+
+  .gallery-card {
+    width: 150px;
+    height: auto;
+  }
+
+
+/** 
+  *   EVENTS SECTIONS
+  */
+
+
+  #events section h1 {
+    font-size: var(--fs-12);
+  }
+
+  .events-container {
+    flex-wrap: wrap;
+    scale: 0.8;    
+    margin-top: -10%;
+  }
+
+
+/** 
+  *   LETTER SECTIONS
+  */
+
+
+  #letter section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newsletter-container-2 {
+    margin: 0 20px;
+  }
+
+  .newsletter-container-2 div:nth-child(1) {
+    flex-wrap: wrap;
+  }
+
+  .newsletter-container-2 div:nth-child(1) input{
+    margin-bottom: 20px;
+  }
+
+  .newsletter-container-2 div:nth-child(1) button{
+    height: 40px;
+    width: 100%;
+    margin: 0;
+  }
+
+
+/** 
+  *   FOOTER SECTIONS
+  */
+
+
+  footer {
+    height: 350px;
+  }
+
+  .footer-header div {
+    width: 100%;
+  }
+
+  .footer-body p {
+    margin-top: 70px;
+  }
+
+  .footer-body ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-header div:nth-child(1) a img {
+    justify-self: center;
+    margin-top: 20px;
+  }
+
+  .footer-header div:nth-child(2) {
+    display: none;
+  }
+  
+  .footer-header div:nth-child(3) ul {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  hr {
+    margin: 30px 0 0 0;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   article {
     background-color: var(--bg-sheena);
+  }
+
+
+/** 
+  *   GALLERY SECTIONS
+  */
+
+
+  .gallery-body {
+    grid-template-columns: auto auto;
+  }
+
+  .gallery-card {
+    width: 200px;
+    height: auto;
   }
 }
 
@@ -2043,6 +2406,57 @@ hr {
   article {
     background-color: var(--bg-stacey);
   }
+
+
+/** 
+  *   GALLERY SECTIONS
+  */
+
+
+  .gallery-header h1 {
+    font-size: var(--fs-12);
+  }
+
+  .gallery-header img {
+    display: none;
+  }
+
+  .gallery-body {
+    grid-template-columns: auto auto;
+  }
+
+  .gallery-card {
+    width: 150px;
+    height: auto;
+  }
+
+
+/** 
+  *   EVENTS SECTIONS
+  */
+
+
+  .events-container {
+    margin-top: -25%;
+  }
+
+
+/** 
+  *   FOOTER SECTIONS
+  */
+
+  .footer-body p {
+    margin-top: 50%;
+  }
+
+  .footer-header div:nth-child(3) {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 320px){
