@@ -1,0 +1,74 @@
+### Add to head tag
+
+
+  <script>
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+  </script>
+  <style>
+    .hidden {
+      display: none !important;
+    }
+
+    .main-show {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    .btns-container {
+      background: rgb(5, 146, 36);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    .reds {
+      background-color: rgb(255, 114, 114) !important;
+    }
+  </style>
+
+
+### Add at the end of html: for debug purpose
+
+
+<!-- Debug Mode -->
+<script>
+  const debugBtn = document.getElementById("debugBtn");
+  const container = document.getElementById("body-lock");
+  const ctnLoader = document.getElementById("init-loader");
+  const mainLoader = document.getElementById("main");
+  // let debugMode = false;
+  let debugMode = localStorage.getItem("debugMode") === "true";
+
+  function updateUI() {
+    if (debugMode) {
+      container.classList.remove("x-scroll");
+      ctnLoader.classList.remove("active");
+      ctnLoader.classList.add("hidden");
+      mainLoader.classList.add("main-show");
+      debugBtn.classList.remove("reds");
+      debugBtn.textContent = "Debug: Switch to OFF";
+    } else {
+      container.classList.add("x-scroll");
+      ctnLoader.classList.add("active");
+      ctnLoader.classList.remove("hidden");
+      mainLoader.classList.remove("main-show");
+      debugBtn.classList.add("reds");
+      debugBtn.textContent = "Debug: Switch to ON";
+    }
+  }
+
+  updateUI();
+
+  debugBtn.addEventListener("click", () => {
+    debugMode = !debugMode;
+    localStorage.setItem("debugMode", debugMode);
+    updateUI();
+  });
+</script>

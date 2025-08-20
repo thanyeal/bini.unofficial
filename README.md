@@ -23,7 +23,7 @@
 <!-- ABOUT THE PROJECT  -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://bini-unofficial.onrender.com/)
+[![Product Name Screen Shot][product-screenshot]](https://thanyeal.github.io/bini.unofficial/)
 
 This website is the updated version from the old one with touch of accuracy from the actual design, I also aiming to optimize this website more than the old version.
 
