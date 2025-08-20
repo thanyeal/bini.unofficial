@@ -1,9 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/thanyeal/BINI">
-    <img src="static/media/img/cabinets/BINI_wordmark-white.webp" alt="Logo" width="80" height="auto">
-  </a>
 
   <h3 align="center">BINI Unofficial 2.0</h3>
 
