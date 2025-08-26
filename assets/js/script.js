@@ -1,4 +1,6 @@
-
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
 
 
 // --------------------------------- //
@@ -10,28 +12,40 @@
 function toggleMenu() {
   document.getElementById('navlinks').classList.toggle('show');
 }
-const navbar = document.getElementById("navbar");
-const triggerSection = document.getElementById("about");
+
+// Grab navbar and the trigger section
+const nav = document.querySelector("nav");
+const homeSection = document.querySelector("#home");
 let lastScrollTop = 0;
+
+// FIXED: Proper return for viewport check
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
-  rect.top <= window.innerHeight && rect.bottom >= 0
-  // re( rect.top <= window.innerHeight && rect.bottom >= 0 );
+  return rect.top <= window.innerHeight && rect.bottom >= 0;
 }
+
+// Handle scroll
 window.addEventListener("scroll", () => {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop) {
-    navbar.classList.remove("show");
-    navbar.classList.add("hide");
+  const homeTop = homeSection.getBoundingClientRect().top;
+
+  // when NOT in #home → hide navbar
+  if (homeTop < -100) {
+    nav.classList.add("hide");
+    nav.classList.remove("show");
   } else {
-    if (isInViewport(triggerSection)) {
-      navbar.classList.add("show");
-    } else {
-      navbar.classList.add("hide");
-    }
+    // when inside/near #home → show navbar
+    nav.classList.add("show");
+    nav.classList.remove("hide");
   }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
+
+// EXTRA: Close menu when a nav link is clicked
+document.querySelectorAll("#navlinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById('navlinks').classList.remove('show');
+  });
+});
+
 
 
 
