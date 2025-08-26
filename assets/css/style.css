@@ -1971,6 +1971,10 @@ hr {
     width: 150px;
     height: auto;
   }
+  
+  #galleryModal img {
+    max-width: 90vw;
+  }
 
 
 /** 
@@ -2282,6 +2286,10 @@ hr {
   .gallery-card {
     width: 150px;
     height: auto;
+  }
+
+  #galleryModal img {
+    max-width: 90vw;
   }
 
 
