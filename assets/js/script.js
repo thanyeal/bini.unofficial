@@ -345,13 +345,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const photoCards = [
   "./assets/images/gallery/cm-aiah.webp",
-  "./assets/images/gallery/cm-maloi.webp",
-  "./assets/images/gallery/cm-stacey.webp",
   "./assets/images/gallery/cm-colet.webp",
-  "./assets/images/gallery/cm-sheena.webp",
-  "./assets/images/gallery/cm-mikha.webp",
   "./assets/images/gallery/cm-gwen.webp",
   "./assets/images/gallery/cm-jho.webp",
+  "./assets/images/gallery/cm-maloi.webp",
+  "./assets/images/gallery/cm-mikha.webp",
+  "./assets/images/gallery/cm-sheena.webp",
+  "./assets/images/gallery/cm-stacey.webp",
   "./assets/images/gallery/gp-1.webp",
   "./assets/images/gallery/gp-2.webp",
   "./assets/images/gallery/gp-3.webp",

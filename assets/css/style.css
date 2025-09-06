@@ -1197,6 +1197,15 @@ justify-content: end;
   right: 25px;
 }
 
+.smoke {
+  position: absolute;
+  bottom: -28%;
+  width: 500px;
+  height: auto;
+  z-index: 10;
+  filter: blur(2px);
+}
+
 .gallery-body {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -1770,6 +1779,10 @@ hr {
     height: auto;
   }
 
+  .smoke {
+    display: none;
+  }
+
 
 /** 
   *   EVENTS SECTIONS
@@ -1910,7 +1923,7 @@ hr {
 
 
   /**
-    *     YOUTUBE SECTION
+    *   YOUTUBE SECTION
     */
 
 
@@ -1970,6 +1983,10 @@ hr {
   .gallery-card {
     width: 150px;
     height: auto;
+  }
+
+  .smoke {
+    display: none;
   }
   
   #galleryModal img {
@@ -2283,6 +2300,10 @@ hr {
     display: none;
   }
 
+  .smoke {
+    display: none;
+  }
+  
   .gallery-card {
     width: 150px;
     height: auto;
